@@ -1,0 +1,18 @@
+# Build directories
+build/
+build_vs/
+CMakeFiles/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.suo
+*.user
+*.exe
+*.pdb
+*.obj
+*.idb
+*.ilk
+Debug/
+Release/
+x64/
+Win32/
