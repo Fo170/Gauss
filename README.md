@@ -48,20 +48,49 @@ Le programme :
 
 ### Exemple
 
-Saisie d'un système 2×2 :
+Résoudre :
+```
+ 3x +  y =  5
+  x - 2y =  4
+```
+
+Soit sous forme matricielle `A · x = b` :
+```
+⎡ 3   1 ⎤ · ⎡ x ⎤ = ⎡  5 ⎤
+⎣ 1  -2 ⎦   ⎣ y ⎦   ⎣  4 ⎦
+```
+
+Session complète :
+
 ```
  NOMBRES DE LIGNES ? 2
  NOMBRES DE COLONNES ? 2
- MT( 0 ,0 ) ? 3
- MT( 0 ,1 ) ? 1
- MTy( 0 ) ? 5
- MT( 1 ,0 ) ? 1
- MT( 1 ,1 ) ? -2
- MTy( 1 ) ? 4
+ N = 2
+
+ --- saisie de la matrice A ---
+ MT( 0 ,0 ) ? 3          ⎡ 3
+ MT( 0 ,1 ) ? 1          ⎣ 1
+ MT( 1 ,0 ) ? 1             3   1
+ MT( 1 ,1 ) ? -2            1  -2 ⎦
+
+ --- saisie du vecteur b ---
+ MTy( 0 ) ? 5            ⎡  5 ⎤
+ MTy( 1 ) ? 4            ⎣  4 ⎦
 ```
 
-Résultat attendu : `K(0) = 2, K(1) = -1`
-Vérification : `3·2 + 1·(-1) = 5` et `1·2 + (-2)·(-1) = 4` ✓
+Le programme affiche la matrice saisie, puis calcule.
+
+Résultat affiché :
+```
+ K( 0 ) = 2
+ K( 1 ) = -1
+```
+
+Vérification :
+```
+ Y( 0 ) = 5 , Y'( 0 ) = 5     ← 3·2 + 1·(-1) = 5 ✓
+ Y( 1 ) = 4 , Y'( 1 ) = 4     ← 1·2 + (-2)·(-1) = 4 ✓
+```
 
 ### Contrôles
 
